@@ -1,27 +1,26 @@
 
 export default function Home() {
   return (
-    <main className="mx-40 min-h-500">
-      <div className="font-bold underline">
+    <main className="mx-40 min-h-screen flex flex-wrap">
+      <div className="font-bold underline absolute">
         Hello! This is my website.
       </div>
       <ProfileCard/>
-
     </main>
   )
 }
 
 export function ProfileImage() {
   return (
-    <img className="w-1/6 rounded-full" src="/ryo.jpg"></img>
+    <img className="w-80 h-80 rounded-full flex-shrink-0 m-2 " src="/ryo.jpg"></img>
   )
 }
 
 export function ProfileCard() {
   return (
-    <div className=" content-center flex w-full h-full justify-center bg-gradient-to-r from-orange-500 to-violet-500">
+    <div className=" m-auto content-center flex w-3/5 h-96 justify-left bg-gradient-to-r from-orange-500 to-violet-500">
       <ProfileImage/>
-      <p className="w-1/4">jabbajohnny</p>
+      <p className="w-1/4 h-1/4 flex-shrink-0">jabbajohnny</p>
     </div>
   )
 }
