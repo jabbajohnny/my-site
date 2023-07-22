@@ -1,7 +1,15 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
+import { League_Spartan } from 'next/font/google'
+
 const inter = Inter({ subsets: ['latin'] })
+
+const leagueSpartan = League_Spartan({
+  weight: '900',
+  subsets: ['latin'],
+  display: "swap",
+})
 
 export const metadata = {
   title: 'jabbajohnny',
@@ -10,8 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`min-h-screen ${inter.className}`}>{children}</body>
+    <html lang="en" >
+      <body className={`min-h-screen ${leagueSpartan.className}`}>{children}</body>
     </html>
   )
 }
