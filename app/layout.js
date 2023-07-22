@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`min-h-screen ${leagueSpartan.className}`}>{children}</body>
+      <body className={`min-h-screen bg-slate-400 ${leagueSpartan.className}`}>{children}</body>
     </html>
   )
 }
